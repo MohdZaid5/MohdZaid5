@@ -1,5 +1,5 @@
 ﻿
-namespace C_Sarp
+namespace C_Sharp
 {
     class Program
     {
@@ -24,7 +24,7 @@ namespace C_Sarp
             if ( ProjectToRun == 0)
             {
                 Console.WriteLine("\n[=] Running ConsoleAndIO.Example().");
-                ConsoleAndIO.Example();
+                Basics.ConsoleAndIO.Example();
             }
             else
             {
