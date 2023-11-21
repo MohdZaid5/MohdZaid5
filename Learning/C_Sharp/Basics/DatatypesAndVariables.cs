@@ -76,6 +76,13 @@ namespace C_Sharp.Basics
             // Uncommenting the line below will result in a compilation error
             // gravitationalConstant = 100.00;
             Console.WriteLine($"[>] Constant Number: {gravitationalConstant} - A variable that cannot be changed.");
+
+            // Multiple Can also be done within one line.
+            double x1 = 1.0, y1 = 2.0, z1 = 3.0; // Coordinates of Vector 1
+            double x2 = -2.0, y2 = 5.0, z2 = 7.0; // Coordinates of Vector 2
+            // Printing information about the assigned vector coordinates to the console
+            Console.WriteLine($"[>] Vector 1: ({x1}, {y1}, {z1}) - Coordinates of a 3D vector.");
+            Console.WriteLine($"[>] Vector 2: ({x2}, {y2}, {z2}) - Coordinates of another 3D vector.");
         }
 
     }
