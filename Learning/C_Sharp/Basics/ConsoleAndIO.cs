@@ -14,15 +14,15 @@ namespace C_Sharp.Basics
             string? name = Console.ReadLine();
 
             // Output - Printing the input
-            // Simple Concatination usin {+}
+            // Simple Concatenation using {+}
             Console.WriteLine("[>] Hello, " + name + " Welcome to C# programming.");
-            // Concatination using <Writeline> Overload (Remember that index provided in string is used in followed args) ie: 0 will map to first element you pass there
+            // Concatenation using <WriteLine> Overload (Remember that index provided in string is used in followed args) ie: 0 will map to first element you pass there
             Console.WriteLine("[>] Hello, {0} Welcome to C# programming.", name);
             // String Interpolation (Similar to f-strings in python)
             Console.WriteLine($"[>] Hello, {name} Welcome to C# programming.");
 
             // Uncomment code below if needed
-            // Wait for user input before closing the console window use Readkey Method to 
+            // Wait for user input before closing the console window use ReadKey Method to 
             // Console.WriteLine("Press any key to exit.");
             // Console.ReadKey();
 
