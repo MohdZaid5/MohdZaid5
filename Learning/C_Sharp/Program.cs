@@ -18,6 +18,7 @@ namespace C_Sharp
             Console.WriteLine("[A] Available Projects:");
             Console.WriteLine("[ ] [0] -> ConsoleAndIO (Input and output handling).");
             Console.WriteLine("[ ] [1] -> DatatypesAndVariables (Datatypes and Variables).");
+            Console.WriteLine("[ ] [2] -> StatementsAndOperations (Statements and Operations).");
 
             // Take input from user
             Console.Write("[Y] Your Choice:");
@@ -38,6 +39,13 @@ namespace C_Sharp
             {
                 Console.WriteLine("\n[=] Running DatatypesAndVariables.Example().");
                 Basics.DatatypesAndVariables.Example();
+            }
+            else if (ProjectToRun == 2)
+            {
+                Console.WriteLine("\n[=] Running StatementsAndOperations.ExampleStatements().");
+                Basics.StatementsAndOperations.ExampleStatements();
+                Console.WriteLine("\n[=] Running StatementsAndOperations.ExampleOperations().");
+                Basics.StatementsAndOperations.ExampleOperations();
             }
             else
             {
