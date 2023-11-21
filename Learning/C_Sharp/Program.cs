@@ -44,7 +44,7 @@ namespace C_Sharp
             {
                 Console.WriteLine("\n[=] Running StatementsAndOperations.ExampleStatements().");
                 Basics.StatementsAndOperations.ExampleStatements();
-                Console.WriteLine("\n[=] Running StatementsAndOperations.ExampleOperations().");
+                Console.WriteLine("[=] Running StatementsAndOperations.ExampleOperations().");
                 Basics.StatementsAndOperations.ExampleOperations();
             }
             else
