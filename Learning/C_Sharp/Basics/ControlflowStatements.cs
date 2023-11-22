@@ -1,7 +1,7 @@
 ﻿
 namespace C_Sharp.Basics
 {
-    public class ConditionalStatements
+    public class ControlflowStatements
     {
         public static void Example()
         {
