@@ -19,6 +19,7 @@ namespace C_Sharp
             Console.WriteLine("[ ] [0] -> ConsoleAndIO (Input and output handling).");
             Console.WriteLine("[ ] [1] -> DatatypesAndVariables (Datatypes and Variables).");
             Console.WriteLine("[ ] [2] -> StatementsAndOperations (Statements and Operations).");
+            Console.WriteLine("[ ] [3] -> ConditionalStatements (If, Else, ElseIf, Switch, Case).");
 
             // Take input from user
             Console.Write("[Y] Your Choice:");
@@ -46,6 +47,13 @@ namespace C_Sharp
                 Basics.StatementsAndOperations.ExampleStatements();
                 Console.WriteLine("[=] Running StatementsAndOperations.ExampleOperations().");
                 Basics.StatementsAndOperations.ExampleOperations();
+            }
+            else if (ProjectToRun == 3)
+            {
+                Console.WriteLine("\n[=] Running ConditionalStatements.Example().");
+                Basics.ConditionalStatements.Example();
+                Console.WriteLine("[=] Running ConditionalStatements.Example2().");
+                Basics.ConditionalStatements.Example2();
             }
             else
             {
