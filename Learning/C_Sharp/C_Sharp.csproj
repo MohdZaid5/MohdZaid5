@@ -22,4 +22,8 @@
     <PackageReference Include="xunit" Version="2.6.2" />
   </ItemGroup>
 
+  <PropertyGroup>
+	 <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
 </Project>
