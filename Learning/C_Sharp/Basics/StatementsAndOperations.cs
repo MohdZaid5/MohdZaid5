@@ -86,53 +86,8 @@ namespace C_Sharp.Basics
              * 
              * Operand: Values or variables participating in an operation.
              * Operator: Symbols or keywords representing specific operations between operands.
-             * 
-             * 1. Addition Operation:
-             *    Operand: Two values
-             *    Operator: +
-             *    Operation: Combining two values
-             * 
-             * 2. Subtraction Operation:
-             *    Operand: Two values
-             *    Operator: -
-             *    Operation: Finding the difference between two values
-             * 
-             * 3. Multiplication Operation:
-             *    Operand: Two values
-             *    Operator: *
-             *    Operation: Creating a product of two values
-             * 
-             * 4. Division Operation:
-             *    Operand: Two values
-             *    Operator: /
-             *    Operation: Dividing one value by another
-             * 
-             * 5. Modulo Operation:
-             *    Operand: Two values
-             *    Operator: %
-             *    Operation: Obtaining the remainder after division
-             * 
-             * 6. Logical AND Operation:
-             *    Operand: Two boolean values
-             *    Operator: &&
-             *    Operation: Checking if both boolean values are true
-             * 
-             * 7. Logical OR Operation:
-             *    Operand: Two boolean values
-             *    Operator: ||
-             *    Operation: Checking if at least one boolean value is true
-             * 
-             * 8. Logical NOT Operation:
-             *    Operand: One boolean value
-             *    Operator: !
-             *    Operation: Negating the boolean value
-             * 
-             * 9. Unary Minus Operation:
-             *    Operand: One numerical value
-             *    Operator: -
-             *    Operation: Negating the numerical value
              */
-
+            // Some basic Operators
             int sum = 5 + 3;                        // Addition Operation
             int difference = 10 - 2;                // Subtraction Operation
             int product = 4 * 2;                    // Multiplication Operation
@@ -152,6 +107,72 @@ namespace C_Sharp.Basics
             Console.WriteLine($"[>] Logical OR Result: {orResult}");
             Console.WriteLine($"[>] Logical NOT Result: {notResult}");
             Console.WriteLine($"[>] Unary Minus Result: {negationResult}");
+
+
+            /* Increment and Decrement Operators:
+             * 
+             * The increment operator '++' adds one to the variable. When used as postfix (x++), it returns the current value of x and then increments it.
+             * When used as prefix (++x), it increments x first and then returns the updated value.
+             * 
+             * The decrement operator '--' subtracts one from the variable. When used as postfix (x--), it returns the current value of x and then decrements it.
+             * When used as prefix (--x), it decrements x first and then returns the updated value.
+             */
+            int a = 5;
+            int b = 3;
+            // Incrementing the value of 'a' using postfix and prefix notation
+            Console.WriteLine($"[>] Initial value of 'a': {a}");
+            Console.WriteLine($"[>] After a++, current value of 'a': {a++}, new value of 'a': {a}");
+            Console.WriteLine($"[>] After ++a, updated value of 'a': {++a}");
+            // Decrementing the value of 'b' using postfix and prefix notation
+            Console.WriteLine($"[>] Initial value of 'b': {b}");
+            Console.WriteLine($"[>] After b--, current value of 'b': {b--}, new value of 'b': {b}");
+            Console.WriteLine($"[>] After --b, updated value of 'b': {--b}");
+
+
+            /* Comparison Operators:
+             * 
+             * Comparison operators are used to compare two values. They return a Boolean result indicating whether the comparison is true or false.
+             * 
+             * Common comparison operators:
+             *   - Equal to (==): Checks if two values are equal.
+             *   - Not equal to (!=): Checks if two values are not equal.
+             *   - Greater than (>): Checks if the left value is greater than the right value.
+             *   - Less than (<): Checks if the left value is less than the right value.
+             *   - Greater than or equal to (>=): Checks if the left value is greater than or equal to the right value.
+             *   - Less than or equal to (<=): Checks if the left value is less than or equal to the right value.
+             */
+            int x = 10;
+            int y = 5;
+            // Examples comparison operators
+            Console.WriteLine($"[>] Is x equal to y? {x == y}");                    // Checks if x is equal to y (Output: False)
+            Console.WriteLine($"[>] Is x not equal to y? {x != y}");                // Checks if x is not equal to y (Output: True)
+            Console.WriteLine($"[>] Is x greater than y? {x > y}");                 // Checks if x is greater than y (Output: True)
+            Console.WriteLine($"[>] Is x less than y? {x < y}");                    // Checks if x is less than y (Output: False)
+            Console.WriteLine($"[>] Is x greater than or equal to y? {x >= y}");    // Checks if x is greater than or equal to y (Output: True)
+            Console.WriteLine($"[>] Is x less than or equal to y? {x <= y}");       // Checks if x is less than or equal to y (Output: False)
+
+
+            /* Assignment Operators:
+             * 
+             * Assignment operators are used to assign values to variables and perform operations at the same time.
+             * 
+             * Common assignment operators:
+             *   - Assignment (=): Assigns the value on the right to the variable on the left.
+             *   - Addition and Assignment (+=): Adds the value on the right to the variable on the left and assigns the result to the variable on the left.
+             *   - Subtraction and Assignment (-=): Subtracts the value on the right from the variable on the left and assigns the result to the variable on the left.
+             *   - Multiplication and Assignment (*=): Multiplies the variable on the left by the value on the right and assigns the result to the variable on the left.
+             *   - Division and Assignment (/=): Divides the variable on the left by the value on the right and assigns the result to the variable on the left.
+             *   - Modulus and Assignment (%=): Computes the remainder of the variable on the left divided by the value on the right and assigns the result to the variable on the left.
+             */
+            int value1;
+            int value2 = 5;
+            // Examples assignment operators
+            Console.WriteLine($"[>] Assignment (=): {value1 = value2}");  // Assigns the value of 'value2' to 'value1' and returns the new value of 'value1'
+            Console.WriteLine($"[>] Addition and Assignment (+=): {value1 += value2}");  // Adds 'value2' to 'value1' and assigns the result to 'value1'
+            Console.WriteLine($"[>] Subtraction and Assignment (-=): {value1 -= value2}");  // Subtracts 'value2' from 'value1' and assigns the result to 'value1'
+            Console.WriteLine($"[>] Multiplication and Assignment (*=): {value1 *= value2}");  // Multiplies 'value1' by 'value2' and assigns the result to 'value1'
+            Console.WriteLine($"[>] Division and Assignment (/=): {value1 /= value2}");  // Divides 'value1' by 'value2' and assigns the result to 'value1'
+            Console.WriteLine($"[>] Modulus and Assignment (%=): {value1 %= value2}");  // Computes the remainder of 'value1' divided by 'value2' and assigns the result to 'value1'
 
         }
 
