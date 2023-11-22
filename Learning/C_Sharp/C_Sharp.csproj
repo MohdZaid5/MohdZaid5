@@ -12,4 +12,9 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
 
+  <ItemGroup>
+    <Folder Include="Projects\" />
+    <Folder Include="Basics\" />
+  </ItemGroup>
+
 </Project>
