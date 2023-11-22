@@ -38,14 +38,14 @@ namespace Calculator
                 }
 
                 // Take in Numbers
-                double num1, num2, result;
+                double result;
                 Console.Write("[Number]: Enter the first number: ");
-                if (!double.TryParse(Console.ReadLine(), out num1))
+                if (!double.TryParse(Console.ReadLine(), out double num1))
                 {
                     Console.WriteLine("[Error] Invalid input for the first number. Please enter a valid number.");
                 }
                 Console.Write("[Number]: Enter the second number: ");
-                if (!double.TryParse(Console.ReadLine(), out num2))
+                if (!double.TryParse(Console.ReadLine(), out double num2))
                 {
                     Console.WriteLine("[Error] Invalid input for the second number. Please enter a valid number.");
                 }
