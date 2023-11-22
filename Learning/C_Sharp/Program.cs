@@ -31,34 +31,31 @@ namespace C_Sharp
                 ProjectToRun = int.Parse( user_input );
             }
 
-
-            if ( ProjectToRun == 0)
+            switch (ProjectToRun)
             {
-                Console.WriteLine("\n[=] Running ConsoleAndIO.Example().");
-                Basics.ConsoleAndIO.Example();
-            }
-            else if (ProjectToRun == 1)
-            {
-                Console.WriteLine("\n[=] Running DatatypesAndVariables.Example().");
-                Basics.DatatypesAndVariables.Example();
-            }
-            else if (ProjectToRun == 2)
-            {
-                Console.WriteLine("\n[=] Running StatementsAndOperations.ExampleStatements().");
-                Basics.StatementsAndOperations.ExampleStatements();
-                Console.WriteLine("[=] Running StatementsAndOperations.ExampleOperations().");
-                Basics.StatementsAndOperations.ExampleOperations();
-            }
-            else if (ProjectToRun == 3)
-            {
-                Console.WriteLine("\n[=] Running ConditionalStatements.Example().");
-                Basics.ControlflowStatements.Example();
-                Console.WriteLine("[=] Running ConditionalStatements.Example2().");
-                Basics.ControlflowStatements.Example2();
-            }
-            else
-            {
-                Console.WriteLine($"[!] Invalid Choice {ProjectToRun} is not valid Project.");
+                case 0:
+                    Console.WriteLine("\n[=] Running ConsoleAndIO.Example().");
+                    Basics.ConsoleAndIO.Example();
+                    break;
+                case 1:
+                    Console.WriteLine("\n[=] Running DatatypesAndVariables.Example().");
+                    Basics.DatatypesAndVariables.Example();
+                    break;
+                case 2:
+                    Console.WriteLine("\n[=] Running StatementsAndOperations.ExampleStatements().");
+                    Basics.StatementsAndOperations.ExampleStatements();
+                    Console.WriteLine("[=] Running StatementsAndOperations.ExampleOperations().");
+                    Basics.StatementsAndOperations.ExampleOperations();
+                    break;
+                case 3:
+                    Console.WriteLine("\n[=] Running ConditionalStatements.Example().");
+                    Basics.ControlflowStatements.Example();
+                    Console.WriteLine("[=] Running ConditionalStatements.Example2().");
+                    Basics.ControlflowStatements.Example2();
+                    break;
+                default:
+                    Console.WriteLine($"[!] Invalid Choice {ProjectToRun} is not valid Project.");
+                    break;
             }
 
             Console.WriteLine($"[=] EOP End of project.\n");
