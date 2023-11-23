@@ -20,15 +20,21 @@ namespace C_Sharp
             Console.WriteLine("[ ] [1] -> DatatypesAndVariables (Datatypes and Variables).");
             Console.WriteLine("[ ] [2] -> StatementsAndOperations (Statements and Operations).");
             Console.WriteLine("[ ] [3] -> ConditionalStatements (If, Else, ElseIf, Switch, Case).");
+            Console.WriteLine("[ ] [4] -> IterationStatements (for, foreach, while and do).");
+
 
             // Take input from user
-            Console.Write("[Y] Your Choice:");
-            string? user_input = Console.ReadLine();
-
+            bool bypass = false;
             int ProjectToRun = 0;
-            if (user_input != null)
+
+            if( !bypass )
             {
-                ProjectToRun = int.Parse( user_input );
+                Console.Write("[Y] Your Choice:");
+                string? user_input = Console.ReadLine();
+                if (user_input != null)
+                {
+                    ProjectToRun = int.Parse( user_input );
+                }
             }
 
             switch (ProjectToRun)
@@ -52,6 +58,10 @@ namespace C_Sharp
                     Basics.ControlflowStatements.Example();
                     Console.WriteLine("[=] Running ConditionalStatements.Example2().");
                     Basics.ControlflowStatements.Example2();
+                    break;
+                case 4:
+                    Console.WriteLine("\n[=] Running IterationStatements.Example().");
+                    Basics.IterationStatements.Example();
                     break;
                 default:
                     Console.WriteLine($"[!] Invalid Choice {ProjectToRun} is not valid Project.");
