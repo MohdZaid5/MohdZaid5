@@ -8,4 +8,8 @@
     <StartupObject>Calculator.SimpleCalculator</StartupObject>
   </PropertyGroup>
 
+  <PropertyGroup>
+	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
 </Project>
