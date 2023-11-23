@@ -25,8 +25,8 @@ namespace C_Sharp
 
 
             // Take input from user
-            bool bypass = true;
-            int ProjectToRun = 5;
+            bool bypass = false;
+            int ProjectToRun = 0;
 
             if( !bypass )
             {
