@@ -21,11 +21,12 @@ namespace C_Sharp
             Console.WriteLine("[ ] [2] -> StatementsAndOperations (Statements and Operations).");
             Console.WriteLine("[ ] [3] -> ConditionalStatements (If, Else, ElseIf, Switch, Case).");
             Console.WriteLine("[ ] [4] -> IterationStatements (for, foreach, while and do).");
+            Console.WriteLine("[ ] [5] -> Arrays.");
 
 
             // Take input from user
-            bool bypass = false;
-            int ProjectToRun = 0;
+            bool bypass = true;
+            int ProjectToRun = 5;
 
             if( !bypass )
             {
@@ -62,6 +63,10 @@ namespace C_Sharp
                 case 4:
                     Console.WriteLine("\n[=] Running IterationStatements.Example().");
                     Basics.IterationStatements.Example();
+                    break;
+                case 5:
+                    Console.WriteLine("\n[=] Running Arrays.Example().");
+                    Basics.Arrays.Example();
                     break;
                 default:
                     Console.WriteLine($"[!] Invalid Choice {ProjectToRun} is not valid Project.");
