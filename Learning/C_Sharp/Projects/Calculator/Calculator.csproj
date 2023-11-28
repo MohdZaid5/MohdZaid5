@@ -18,6 +18,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="C:\Users\Admin\.nuget\packages\microsoft.diagnostics.tracing.traceevent\3.0.2\buildTransitive\..\build\native\x86\KernelTraceControl.dll" />
+    <None Remove="C:\Users\Admin\.nuget\packages\microsoft.diagnostics.tracing.traceevent\3.0.2\buildTransitive\..\build\native\x86\KernelTraceControl.Win61.dll" />
+    <None Remove="C:\Users\Admin\.nuget\packages\microsoft.diagnostics.tracing.traceevent\3.0.2\buildTransitive\..\build\native\x86\msdia140.dll" />
+    <None Remove="C:\Users\Admin\.nuget\packages\microsoft.diagnostics.tracing.traceevent\3.0.2\buildTransitive\..\build\native\x86\msvcp140.dll" />
+    <None Remove="C:\Users\Admin\.nuget\packages\microsoft.diagnostics.tracing.traceevent\3.0.2\buildTransitive\..\build\native\x86\vcruntime140.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.10" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
