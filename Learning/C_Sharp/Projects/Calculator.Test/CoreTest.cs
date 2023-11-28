@@ -180,4 +180,36 @@ namespace Calculator.Test
         }
     }
 
+    public class TestFactorAlgorithms
+    {
+        [Theory]
+        [InlineData( 1, new[] { 1 })]           // Tests the smallest prime number
+        [InlineData( 2, new[] { 1, 2 })]        // Tests the smallest even prime number
+        [InlineData( 3, new[] { 1, 3 })]        // Tests the smallest odd prime number
+        [InlineData( 4, new[] { 1, 2, 4 })]     // Tests a composite number
+        [InlineData( 7, new[] { 1, 7 })]        // Tests a prime number
+        [InlineData(10, new[] { 1, 2, 5, 10 })] // Tests a composite number
+        [InlineData(13, new[] { 1, 13 })]       // Tests a prime number
+        [InlineData(25, new[] { 1, 5, 25 })]    // Tests a composite number
+        public void Core_SimpleFactorAlgorithm_ReturnsFactors(int number, int[] expectedFactors)
+        {
+            var result = Calculator.Core.SimpleFactorAlgorithm(number);
+            result.Should().BeEquivalentTo(expectedFactors);
+        }
+
+        [Theory]
+        [InlineData(1, new[] { 1 })]            // Tests the smallest prime number
+        [InlineData(2, new[] { 1, 2 })]         // Tests the smallest even prime number
+        [InlineData(3, new[] { 1, 3 })]         // Tests the smallest odd prime number
+        [InlineData(4, new[] { 1, 2, 4 })]      // Tests a composite number
+        [InlineData(7, new[] { 1, 7 })]         // Tests a prime number
+        [InlineData(10, new[] { 1, 2, 5, 10 })] // Tests a composite number
+        [InlineData(13, new[] { 1, 13 })]       // Tests a prime number
+        [InlineData(25, new[] { 1, 5, 25 })]    // Tests a composite number
+        public void Core_OptimizedFactorAlgorithm_ReturnsFactors(int number, int[] expectedFactors)
+        {
+            var result = Calculator.Core.OptimizedFactorAlgorithm(number);
+            result.Should().BeEquivalentTo(expectedFactors);
+        }
+    }
 }

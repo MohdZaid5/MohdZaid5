@@ -1,5 +1,4 @@
 ﻿
-
 namespace Calculator
 {
     public class Core
@@ -48,5 +47,37 @@ namespace Calculator
             return number1 / number2;
         }
 
+
+        public static List<int> SimpleFactorAlgorithm(int number)
+        {
+            List<int> factors = new();
+            for (int possibleFactor = 1; possibleFactor <= number; possibleFactor++)
+            {
+                if (number % possibleFactor == 0) 
+                {
+                    factors.Add(possibleFactor);
+                }
+            }
+            return factors;
+        }
+        public static List<int> OptimizedFactorAlgorithm(int number)
+        {
+            List<int> factors = new();
+            int sqrt = (int)Math.Sqrt(number);
+            for (int possibleFactor = 1; possibleFactor <= sqrt; possibleFactor++)
+            {
+                if (number % possibleFactor == 0)
+                {
+                    factors.Add(possibleFactor);
+                    // If the factors are not equal, add the other factor
+                    if (possibleFactor != number / possibleFactor)
+                    {
+                        factors.Add(number / possibleFactor);
+                    }
+                }
+            }
+            factors.Sort();
+            return factors;
+        }
     }
 }
